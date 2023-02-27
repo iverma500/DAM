@@ -1,0 +1,100 @@
+<!DOCTYPE html> 
+<html lang="es-ES">   
+<head>     
+<meta charset="utf-8">     
+<title>Ejemplo de formulario básico</title>   
+<style>
+form{border-color:grey;}
+h1{text-align:right;
+padding-right: 100px;}
+html{padding-left:100px;}
+</style>
+</head>   
+<body>  
+<hr>
+<form method="Post"
+action="mailto:1b_dam20_05@iesjovellanos.org">
+<fieldset>
+<legend>Preferencias</legend>
+<br><br> 
+<input type="checkbox"  name="materia">Matemáticas
+<input type="checkbox"  name="materia">Historia
+<input type="checkbox"  name="materia">Lengua
+<input type="checkbox"  name="materia">Geografía
+<br><br>
+<textarea  rows="6" cols="59" name="texto" placeholder="Por favor, escriba aquí..."></textarea>
+<br><br>
+DNI<input type="text" name="dni">
+Nombre<input type="text" name="nombre">
+<br><br>
+Elija una fecha: <input type="date" name="fecha">
+<br><br>
+Elija un color<input type="color" name="color">
+<br><br>
+Elija una hora<input type="time" name="hora">
+<br><br>
+<select name="menu" size="1">  
+ <option value="conector" name="bits">100 Mbits</option>   
+ <option value="PS2" name="bits">75 Mbits</option>   
+ <option value="USB" name="bits">50 Mbits</option>   
+ <option value="paralelo" name="bits">25 Mbits</option>    
+ </select>
+ <br><br>
+<input type="radio"  name="programas">Python
+<input type="radio"  name="programas">HTML
+<input type="radio"  name="programas">Visual Basic
+<input type="radio"  name="programas">Java
+Elija un fichero:<input type="file" name="file">
+</frame>
+</fieldset>
+<br><br>
+<fieldset>
+<legend>Rellene las opciones siguientes</legend>
+<br><br>
+<input type="radio"  name="mates">Matemáticas
+<br><br>
+<input type="radio"  name="historia">Historia
+<br><br>
+<input type="radio"  name="lengua">Lengua
+<br><br>
+DNI<input type="text" name="dni">
+Nombre<input type="text" name="nombre">
+<br><br>
+Elija un color<input type="color" name="color">
+<br><br>
+<input type="radio"  name="mates">Matemáticas
+</fieldset>
+<br><br>
+<fieldset>
+<legend>Completar</legend>
+<br><br>
+<textarea  rows="6" cols="59" name="texto" placeholder="Por favor, escriba aquí..."></textarea>
+<br><br>
+Elija una fecha: <input type="date" name="fecha">
+<br><br>
+Elija un color<input type="color" name="color">
+<br><br>
+<input type="checkbox"  name="puerto">USB
+<br><br>
+<input type="checkbox"  name="puerto">Paralelo
+<br><br>
+<input type="checkbox"  name="puerto">PS2
+<br><br>
+<select name="menu2" size="1">  
+ <option value="conector" name="a0">A01</option>   
+ <option value="PS2" name="a0">A02</option>   
+ <option value="USB" name="a0">A03</option>   
+ <option value="paralelo" name="a0">A04</option>    
+ </select>
+<br><br>
+Elija un fichero:<input type="file" name="file">
+<br><br>
+DNI<input type="text" name="dni">
+Nombre<input type="text" name="nombre">
+</fieldset>
+<br><br>
+<input type="submit" value="Enviar">
+<input type="reset" value="Borrar Formulario">
+</form>   
+</body> 
+</html> 
