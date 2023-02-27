@@ -1,0 +1,179 @@
+<!DOCTYPE html> 
+<html lang="es-ES">   
+<head>     
+<meta charset="utf-8">     
+<title>Ejemplo de formulario básico</title>   
+<style>
+h1{text-align:right;
+padding-right: 100px;}
+body{background-color: yellow;
+text-align:left;}
+html{border-left:100px;
+padding-left: 50px;
+padding-right: 50px;}
+</style>
+</head>   
+<body>  
+<form method="Post"
+action="mailto:1b_dam20_05@iesjovellanos.org"> 
+<h1> Ivan De Las Heras Martín </h1>
+<h1> BUSCAR </h1>
+<hr>     
+Concepto de Búsqueda:             
+<input type="text" name="texto">       
+<br>  
+<hr>     
+Idioma:      
+<br> 
+<input type="checkbox"  name="sp"> Español  
+<input type="checkbox"  name="fr"> Francés 
+<input type="checkbox"  name="en"> Inglés 
+<input type="checkbox"  name="dt"> Alemán     
+<br><br>    
+Ámbito  
+<br> 
+<input type="checkbox" value="Local" name="lv"> Local    
+<input type="checkbox" value="Regional" name="rg"> Regional 
+<input type="checkbox" value="Mundial" name="md"> Mundial 
+<br><br><br><br>
+<h1> COMERCIOS MANOLO </h1>
+<hr>
+<h3>ENVIAR LA COMPRA A:</h3>
+<br><br>    
+ Nombre:
+ <input type="text" name="name" size="30" maxlength="30" required>
+ <br>
+ Dirección:
+ <input type="text" name="calle" style="width:200px;height:100px"  maxlength="50" required>
+<br><br>
+Ciudad:
+<input type="text" name="city" size="30" maxlength="40" required>
+Provincia:
+<input type="text" name="provincia" size="30" maxlength="40" required>
+<br><br>
+C.P:
+<input type="text" name="codigo" size="20" maxlength="5" required>
+Teléfono: 
+<input type="tel" name="numero" size="20" maxlength="9" required>
+<br><br>
+<hr>
+<h3>PAGO:</h3>
+<h3>FORMAS DE PAGO:</h3>
+<label><input type="radio" name="curso" value="efectivo" required>EFECTIVO</label> 
+<label><input type="radio" name="curso" value="efectivo" required>TARJETA</label>  
+<br><br>
+SELECCIONE SU TARJETA:
+<select type="menu" required>
+<option name="banco1">BANCO 1</option>
+<option name="banco2">BANCO 2</option>
+<option name="banco3">BANCO 3</option>
+</select>
+Nº DE TARJETA
+<input type="text" name="tarjeta" maxlength="14" required> 
+<hr>
+<h3>FECHA Deseada
+<br>
+de entrega (Día-Mes-Año):
+<input type="date" name="fecha"> 
+</h3>
+<hr>
+<br><br><br><br>
+<h1> NUEVO MENSAJE </h1>
+<hr>      
+<h3>
+ENVIAR A:
+<input type="email" size="40" name="correo">
+
+BUSCAR EN:
+<input type="text" name="archivo"> 
+ 
+</h3>
+<h3>Asunto: 
+<input type="text" size="80" name="asunto">
+</h3>
+<hr>
+<h3> CONTENIDO: </h3>
+<textarea  rows="8" cols="50" name="txt"></textarea>
+<hr>
+<br>
+<h3>
+<img src="http://icons.iconarchive.com/icons/graphicloads/100-flat/256/email-2-icon.png" height="90px" width="90px">  <a href="https://accounts.google.com/ServiceLogin?hl=es&service=mail">
+  Ir al Gestor de Correo  </a>
+</h3>
+<h1> LA TIENDA EN INTERNET </h1>
+<hr>       
+<h3>
+Supermercado
+</h3>
+<label><input type="radio" name="supermercado" value="comida" required>Comida </label> 
+<label><input type="radio" name="supermercado" value="ropa"   required> Ropa</label> 
+<label><input type="radio" name="supermercado" value="bebida"    required>Bebida </label> 
+<button> <a href="" >MOSTRAR PRODUCTOS </a></button>
+<h3>
+Tiendas
+</h3>
+<label><input type="radio" name="tiendas" value="deportes" required>Deportes </label> 
+<label><input type="radio" name="tiendas" value="muebles" required>Muebles </label> 
+<label><input type="radio" name="tiendas" value="jardin" required>Jardinería </label> 
+<button> <a href="" >MOSTRAR PRODUCTOS </a></button>
+<br><br><br><br>
+Nombre: 
+<input type="text" name="nombre">
+<br>
+<br>
+Apellidos:
+<input type="text" name="apellidos">
+<br><br>
+Correo Electrónico:
+<input type="mail" name="correo">
+<br><br>
+Población:
+<input type="text" name="poblacion">
+<br><br>
+Provincia:
+<input type="text" name="provincia">
+<br><br>
+ Edad:
+ <br>
+<label><input type="radio"  name="edad" value="0-20" required>0-20 </label>
+<br>
+<label><input type="radio"  name="edad" value="20-40" required>20-40</label> 
+<br>
+<label><input type="radio"  name="edad" value="40-65" required>40-65</label> 
+<br>
+<label><input type="radio"  name="edad"  value="65+" required>65 o +</label> 
+<br>
+<br><br>
+¿Como nos conociste?
+<br><br>
+<input type="checkbox"  name="amigo"> A través de un amigo 
+<br>
+<input type="checkbox"  name="buscador"> A través de un Buscador
+  <br>
+<input type="checkbox"  name="red"> Navegando por la Red   
+<br>
+<input type="checkbox"  name="otros"> Otros 
+<br> <br> 
+Opinión sobre nuestra web:
+<br><br>
+<textarea  rows="8" cols="50" name="opinion" placeholder="Escriba aquí su opinión..."></textarea>
+<br><br>
+Tiene alguna sugerencia...
+<br><br>
+<textarea  rows="8" cols="50" name="sugerencia" placeholder="Escriba aquí su sugerencia..."></textarea>
+<br><br>
+¿Cuánto navegas por Internet? ¡Señala la opción que más se acerque!
+<br><br>
+<select name="menu" size="2">  
+ <option  name="0-1h">Menos de 1 hora al dia</option>   
+ <option  name="1-2h">1-2 horas al dia</option>   
+ <option  name="2-3h">2-3 horas al dia</option>   
+ <option  name="3-4h">3-4 horas al dia</option>   
+ <option  name="4+h">Más de 4 horas al dia</option> 
+ </select>
+<br><br>
+<input type="submit" value="Enviar">
+<input type="reset" value="Borrar Formulario">
+</form> 
+</body> 
+</html> 
