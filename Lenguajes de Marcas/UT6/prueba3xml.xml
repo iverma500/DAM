@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listafacturas [
+<!ELEMENT listafacturas (facturas)+>
+<!ELEMENT facturas ( importe, emisor, pagador)>
+<!ELEMENT emisor (volumenventas)>
+<!ELEMENT pagador ( volumenventas2)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT volumenventas (#PCDATA)>
+<!ELEMENT volumenventas2 (#PCDATA)>
+<!ELEMENT importe (#PCDATA)>
+<!ATTLIST facturas fecha CDATA #IMPLIED>
+<!ATTLIST emisor cif CDATA #REQUIRED>
+<!ATTLIST emisor nombre CDATA #REQUIRED>
+<!ATTLIST emisor volumenventas CDATA #IMPLIED>
+<!ATTLIST pagador cif2 CDATA #REQUIRED>
+<!ATTLIST pagador nombre2 CDATA #REQUIRED>
+<!ATTLIST pagador volumenventas2 CDATA #IMPLIED>]>
+
+<listafacturas>
+           
+        <facturas fecha="12-02-2020">
+           <importe>1245 euros</importe>
+              <emisor cif="1234567890A" nombre="pepe">
+                  <volumenventas>120</volumenventas>
+              </emisor>
+              <pagador cif2="0987654321B" nombre2="paco">
+                  <volumenventas2>121</volumenventas2>
+              </pagador>
+        </facturas>
+        
+        <facturas>
+           <importe>1245 euros</importe>
+              <emisor cif="1234567890A" nombre="pepe">
+                  <volumenventas></volumenventas>
+              </emisor>
+              <pagador cif2="0987654321B" nombre2="paco">
+                  <volumenventas2></volumenventas2>
+              </pagador>
+        </facturas>
+        
+</listafacturas>
+
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listaventas [
+<!ELEMENT listaventas (venta)+>
+<!ELEMENT venta (importe, comprador, vendedor, fecha, codigo)>
+<!ELEMENT importe (#PCDATA)>
+<!ELEMENT comprador (#PCDATA)>
+<!ELEMENT vendedor (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT codigo (#PCDATA)>
+<!ATTLIST venta fecha CDATA #IMPLIED>]>
+
+<listaventas>
+
+<venta>
+<importe>23.65</importe>
+<comprador>PEPE</comprador>
+<vendedor>JOSE</vendedor>
+<fecha>23/05/2020</fecha>
+<codigo>324</codigo>
+</venta>
+
+<venta>
+<importe>12</importe>
+<comprador>RUBEN</comprador>
+<vendedor>JOSE</vendedor>
+<fecha></fecha>
+<codigo>5632</codigo>
+</venta>
+
+</listaventas>

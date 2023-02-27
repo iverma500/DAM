@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE lista_arbol [
+<!ELEMENT lista_arbol (arbol)*>
+<!ELEMENT arbol (nombrecientifico, nombre*, vegetacion*, altura*, formayestructura*, colorenprimavera*, resistenciaheladas*)>
+<!ELEMENT nombrecientifico (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT vegetacion  (#PCDATA)>
+<!ELEMENT altura  (#PCDATA)>
+<!ELEMENT formayestructura (#PCDATA)>
+<!ELEMENT colorenprimavera (#PCDATA)>
+<!ELEMENT resistenciaheladas (#PCDATA)>
+
+]>
+<lista_arbol>
+
+<arbol>
+
+<nombrecientifico>Acer Monspessulanum</nombrecientifico>
+<nombre>Arce Menor</nombre>
+<vegetacion>Caducifolio</vegetacion>
+<altura>De 6 a 10 metros</altura>
+<formayestructura>Copa Esférica; Tronco principal recto con bifurcaciones; Ramaje Colgante</formayestructura>
+<colorenprimavera>Haz verde brillante, envés verde blanquecino</colorenprimavera>
+<resistenciaheladas>Heladas fuertes (hasta -15 ºC)</resistenciaheladas>
+
+</arbol>
+
+<arbol>
+
+<nombrecientifico></nombrecientifico>
+<nombre>Arce Menor</nombre>
+<vegetacion>Caducifolio</vegetacion>
+<altura></altura>
+<formayestructura></formayestructura>
+<colorenprimavera>Haz verde brillante, envés verde blanquecino</colorenprimavera>
+<resistenciaheladas>Heladas fuertes (hasta -15 ºC)</resistenciaheladas>
+
+</arbol>
+
+</lista_arbol>

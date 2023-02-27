@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE proveedores [
+<!ELEMENT proveedores (pedido)+>
+<!ELEMENT pedido ( tractor+)>
+<!ELEMENT tractor ( componente+)>
+<!ELEMENT componente ( nombre, fechaEntrega?, pesoComponente, fragilidad)>
+<!ELEMENT pesoComponente (numSerie, kmmaximos?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT fechaEntrega (#PCDATA)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT año (#PCDATA)>
+<!ELEMENT peso (#PCDATA)>
+<!ELEMENT numSerie (#PCDATA)>
+<!ELEMENT kmmaximos (#PCDATA)>
+<!ELEMENT fragilidad (#PCDATA)>
+<!ATTLIST fechaEntrega dia CDATA #IMPLIED>
+<!ATTLIST fechaEntrega mes CDATA #REQUIRED>
+<!ATTLIST fechaEntrega año CDATA #REQUIRED>
+<!ATTLIST pesoComponente peso CDATA #REQUIRED>
+<!ATTLIST pesoComponente kmmaximos CDATA #IMPLIED>
+<!ATTLIST fragilidad caracteristicas (FRAGIL | NO ) #REQUIRED> ]>
+<proveedores>
+                       <pedido>
+                                     <tractor>
+                                                  <componente >
+                                                        <nombre>EMPRESA</nombre>
+                                                        <fechaEntrega  dia="23" mes="12" año="2020">
+                                                        </fechaEntrega>
+                                                        <pesoComponente peso="3.4 KG">
+                                                                <numSerie>12345</numSerie>
+                                                                <kmmaximos>10000</kmmaximos>
+                                                        </pesoComponente>
+                                                        <fragilidad caracteristicas="FRAGIL"></fragilidad>
+                                                  </componente>
+                                    </tractor>
+                        </pedido>
+                        
+                        <pedido>
+                                     <tractor>
+                                                  <componente >
+                                                        <nombre>EMPRESA2</nombre>
+                                                        <fechaEntrega mes="12" año="2020">
+                                                        </fechaEntrega>
+                                                        <pesoComponente peso="2000 g">
+                                                                <numSerie>01234</numSerie>
+                                                        </pesoComponente>
+                                                        <fragilidad caracteristicas="FRAGIL"></fragilidad>
+                                                  </componente>
+                                    </tractor>
+                        </pedido>
+                        
+                        <pedido>
+                                     <tractor>
+                                                  <componente >
+                                                        <nombre>EMPRESA3</nombre>
+                                                        <pesoComponente peso="20 Kg">
+                                                                <numSerie>98765</numSerie>
+                                                        </pesoComponente>
+                                                        <fragilidad caracteristicas="NO"></fragilidad>
+                                                  </componente>
+                                    </tractor>
+                        </pedido>
+</proveedores>
+
+
+
+
+
+
+
+
+

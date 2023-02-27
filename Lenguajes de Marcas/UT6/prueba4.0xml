@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listacursos [
+<!ELEMENT listacursos (curso)+>
+<!ELEMENT curso ( alumno+)>
+<!ELEMENT alumno ( asignatura+)>
+<!ELEMENT asignatura ( profesor)>
+<!ELEMENT profesor (nrp)>
+<!ELEMENT dni (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido1 (#PCDATA)>
+<!ELEMENT apellido2 (#PCDATA)>
+<!ELEMENT nrp (#PCDATA)>
+<!ATTLIST alumno dni CDATA #REQUIRED>
+<!ATTLIST alumno nombre CDATA #REQUIRED>
+<!ATTLIST alumno apellido1 CDATA #REQUIRED>
+<!ATTLIST alumno apellido2 CDATA #IMPLIED>
+<!ATTLIST asignatura nombreA CDATA #REQUIRED>
+<!ATTLIST asignatura codigo CDATA #REQUIRED>
+<!ATTLIST profesor nombre2 CDATA #REQUIRED>
+<!ATTLIST profesor apellido1_2 CDATA #REQUIRED>
+<!ATTLIST profesor apellido2_2 CDATA #IMPLIED>]>
+
+<listacursos>
+      
+      <curso>
+          <alumno dni="123456789A" nombre="PEPE" apellido1="PEREZ" apellido2="MARTIN" >
+          
+            <asignatura nombreA="LENGUA" codigo="1">
+            
+                <profesor nombre2="PACO" apellido1_2="LOPEZ" apellido2_2="HERRERA">
+                    <nrp>12345</nrp>
+                </profesor>
+            
+            </asignatura>
+            
+          </alumno>
+      </curso>
+      
+      <curso>
+          <alumno dni="123456789B" nombre="ALVARO" apellido1="ORTEGA" >
+          
+            <asignatura nombreA="MATES" codigo="2">
+            
+                <profesor nombre2="JOSE" apellido1_2="PEREZ" >
+                    <nrp>43210</nrp>
+                </profesor>
+            
+            </asignatura>
+            
+          </alumno>
+      </curso>
+      
+</listacursos>
